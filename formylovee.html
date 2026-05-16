@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Monthsary ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #FC8EAC, #FFD1DC); /* Flamingo + Pastel Pink */
+      color: #333;
+      text-align: center;
+    }
+    header {
+      padding: 25px;
+      background-color: #FC8EAC;
+      color: white;
+      font-family: "Harlow Solid Italic", cursive; /* Custom font */
+      font-size: 2.5em; /* Slightly bigger */
+      font-weight: bold;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 50px;
+    }
+    .slot {
+      width: 300px;   /* Increased size */
+      height: 300px;  /* Increased size */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .slot:hover {
+      transform: scale(1.05);
+    }
+    .slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .love-text {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #FFFFFF;
+      margin-top: -20px;
+      margin-bottom: 40px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      text-align: center;
+    }
+    .close {
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+      color: #FC8EAC;
+    }
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>Happy Monthsary, My Love 💖</header>
+
+  <div class="gallery">
+    <!-- Slot 1: Sweet Message -->
+    <div class="slot" onclick="openModal('messageModal')">
+      <img src="C:\Users\user\Downloads\efa11a0f-61d4-4502-b190-9496fea187c4.jpg" alt="Sweet Message">
+    </div>
+
+    <!-- Slot 2: Song -->
+    <div class="slot" onclick="openModal('songModal')">
+      <img src="C:\Users\user\Downloads\d06ad54a-1e2c-43ff-936c-344c083155b1.jpg" alt="Song Dedication">
+    </div>
+
+    <!-- Slot 3: Bouquet -->
+    <div class="slot" onclick="openModal('flowerModal')">
+      <img src="C:\Users\user\Downloads\c83ea5b8-5185-44b9-89a9-97cf2106e93b.jpg" alt="Bouquet of Stargazers">
+    </div>
+  </div>
+
+  <!-- Added Love Text -->
+  <div class="love-text">I always love you, my love!! 💕</div>
+
+  <!-- Modal for Sweet Message -->
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('messageModal')">&times;</span>
+      <h2>My Message For You 💌</h2>
+      <p>Happy Monthsary, my love! You make my world brighter every day. Thank you for always supporting me, thank you for always making me feel special, thank you for everything love especially on my last birthday because you agreed to let us go and go to the places I wanted to go and I enjoyed it so much because I was with you on my birthday, thank you also for your gift for me love I was so happy when I found out that you planned to give me something like that, thank you for all the things you do for me and for us too, and thank you for being my everything. I love you always love!!. 💖</p>
+    </div>
+  </div>
+
+  <!-- Modal for Song -->
+  <div id="songModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('songModal')">&times;</span>
+      <h2>Our Song 🎶</h2>
+      <p>This is the song I dedicate to you, my love.</p>
+      <audio controls>
+        <source src="C:\Users\user\Downloads\Ebe Dancel - Bawat Daan (Lyrics) [C1nPZNn7FJ4].mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <!-- Modal for Bouquet -->
+  <div id="flowerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('flowerModal')">&times;</span>
+      <h2>Bouquet of Stargazers 🌸</h2>
+      <img src="C:\Users\user\Downloads\Copilot_20260516_214040.png" alt="Bouquet of Stargazers" style="width:100%; border-radius:10px;">
+      <p>Just like these stargazers, my love for you blooms beautifully every day. 🌹</p>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+</body>
+</html>
